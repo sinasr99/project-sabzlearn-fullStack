@@ -1,0 +1,164 @@
+.seasons-wrapper {
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
+    border-radius: 1rem;
+    padding: 1rem 2rem;
+    margin: 0 auto 2rem;
+}
+
+.header {
+    margin: 1rem auto 2rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-weight: 700;
+    font-size: 2.2rem;
+}
+
+.header-icon {
+    font-size: 4rem;
+    width: 4rem;
+    height: 4rem;
+    fill: #0A97D4;
+}
+
+.seasons-item {
+    margin: 2rem auto 0;
+    background-color: #F3F4F6;
+    border-radius: 1rem;
+    overflow: hidden;
+    transition: all ease-in-out 150ms;
+    max-height: 4.5rem;
+}
+
+.seasons-item.open {
+    max-height: 1000rem;
+    transition: all ease-in-out 150ms;
+}
+
+.seasons-header {
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #64748B;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.seasons-title {
+
+}
+
+.left {
+    direction: ltr;
+    font-size: 1.4rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.circle {
+    width: 0.3rem;
+    height: 0.3rem;
+    fill: rgba(0, 0, 0, 0.7);
+}
+
+.seasons-icon {
+    rotate: 180deg;
+    width: 2rem;
+    height: 2rem;
+    transition: all ease-in-out 150ms;
+}
+
+.seasons-icon.open {
+    rotate: 360deg;
+}
+
+.episode {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 1rem;
+    color: rgba(0, 0, 0, 0.8);
+    font-weight: 500;
+}
+
+.episode-right {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.episode-number {
+    width: 2.9rem;
+    height: 2.9rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    color: rgba(0, 0, 0, 0.6);
+    border-radius: 0.7rem;
+    font-weight: 700;
+    font-size: 1.4rem;
+}
+
+.episode-title {
+
+}
+
+.episode-left {
+    direction: ltr;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.episode-duration {
+
+}
+
+.episode-icon {
+    width: 2rem;
+    height: 2rem;
+    transition: all ease-in-out 150ms;
+}
+
+@media screen and (max-width: 576px) {
+    .episode-right, .episode-left, .episode-number, .left, .seasons-title {
+        font-size: 1.2rem;
+    }
+
+    .left {
+        gap: 0.5rem;
+    }
+
+    .circle {
+        display: none;
+    }
+
+    .seasons-header {
+        font-size: 1.4rem;
+    }
+}
+
+@media screen and (max-width: 576px) {
+
+    .left span {
+        display: none;
+    }
+
+    .seasons-icon {
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 415px) {
+    .episode-title {
+        max-width: 8rem;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+}

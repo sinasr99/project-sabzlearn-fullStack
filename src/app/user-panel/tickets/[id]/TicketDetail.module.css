@@ -1,0 +1,124 @@
+.parent {
+    background-color: #fff;
+    border-radius: 1rem;
+    padding: 1rem;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto 2rem;
+    padding: 0 1rem 1rem;
+    border-bottom: 0.1rem solid rgba(0, 0, 0, 0.1);
+}
+
+.title {
+    color: rgba(0, 0, 0, 0.6);
+    padding: 0 1rem 0 0;
+    position: relative;
+    font-weight: 600;
+}
+
+.title:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 100%;
+    width: 0.5rem;
+    height: 0.5rem;
+}
+
+.comeback {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1.2rem;
+    color: rgba(0, 0, 0, 0.6);
+    background-color: #F3F4F6;
+    border-radius: 1rem;
+    width: 8rem;
+    height: 3rem;
+    transition: all ease-in-out 150ms;
+}
+
+.comeback:active {
+    scale: 0.9;
+}
+
+.comeback:hover {
+    background-color: #e3e3e3;
+}
+
+.icon-back {
+
+}
+
+.body {
+    width: 80rem;
+    height: fit-content;
+    max-height: 50rem;
+    overflow-y: auto;
+    padding: 1rem 1rem 1rem 2.5rem;
+}
+
+.body::-webkit-scrollbar {
+    height: 8px;
+    width: 8px;
+}
+
+.body::-webkit-scrollbar-track {
+    background: grey;
+    border-radius: 1rem;
+}
+
+.body::-webkit-scrollbar-thumb {
+    background: #1EB35B;
+    border-radius: 1rem;
+}
+
+
+.my-comment, .person-comment {
+    font-size: 1.4rem;
+    text-align: justify;
+    width: 50rem;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+.my-comment-wrapper {
+}
+
+.my-comment {
+    background-color: #F3F4F6;
+}
+
+.clock {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1.2rem;
+    color: rgba(0, 0, 0, 0.8);
+    padding: 0 1rem 0 0;
+    margin: 0.3rem auto 2rem;
+}
+
+.arrow-icon {
+
+}
+
+.person-comment-wrapper {
+    display: flex;
+    justify-content: end;
+}
+
+.person-comment {
+    background-color: #3D3D3D;
+    color: #fff;
+}

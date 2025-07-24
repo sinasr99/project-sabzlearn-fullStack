@@ -1,0 +1,49 @@
+.swiper-wrapper {
+    position: relative;
+}
+
+.swiper-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: -10rem;
+    left: 0;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 100%;
+    border: 0.1rem solid #1EB35B;
+    transition: all ease-in-out 150ms;
+    cursor: pointer;
+}
+
+.swiper-button:hover {
+    background-color: #1EB35B;
+    color: #fff;
+}
+
+.swiper-button:nth-child(1) {
+    left: 6rem;
+}
+
+.icon {
+    width: 2rem;
+    height: 2rem;
+    fill: #1EB35B;
+}
+
+@media screen and (max-width: 568px) {
+    .swiper-button {
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+
+    .swiper-button:nth-child(1) {
+        left: 3rem;
+    }
+
+    .icon {
+        width: 1.2rem;
+        height: 1.2rem;
+    }
+}

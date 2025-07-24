@@ -1,0 +1,261 @@
+.title-course {
+    font-weight: 700;
+    font-size: 2rem;
+    margin: 1rem auto 2rem;
+    color: #1EB35B;
+}
+
+.seasons {
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    border-radius: 1rem;
+}
+
+.seasons-number {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 0.7rem;
+    text-align: center;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+    margin: auto 0;
+    display: block;
+}
+
+.create-wrapper {
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+    border-radius: 1rem;
+    padding: 1rem;
+    background-color: #fff;
+    margin: 0 auto 2rem;
+}
+
+.create-title {
+    font-weight: 600;
+    font-size: 1.8rem;
+    margin: 0.5rem auto 1.5rem;
+}
+
+.seasons-title-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 4rem;
+    border-radius: 1rem;
+}
+
+.input-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.m-b-10px {
+    margin-bottom: 1rem;
+}
+
+.input-seasons {
+    width: 25rem;
+    height: 3rem;
+    padding: 1rem;
+    border-radius: 0.7rem;
+    border: 0.1rem solid rgba(0, 0, 0, 0.1);
+    font-size: 1.4rem;
+}
+
+
+
+.trash {
+    color: #c32525;
+    transition: all ease-in-out 150ms;
+    cursor: pointer;
+}
+
+.trash:hover {
+    scale: 1.1;
+}
+
+.button {
+    width: 8rem;
+    height: 2.5rem;
+    border-radius: 0.7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all ease-in-out 150ms;
+    font-size: 1.4rem;
+    background-color: #1EB35B;
+    color: #fff;
+}
+
+.button:hover {
+    background-color: #087134;
+}
+
+.input-file-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem;
+    border: 0.2rem dashed rgba(0, 0, 0, 0.1);
+    font-size: 1.4rem;
+    color: rgba(0, 0, 0, 0.6);
+    margin: 1rem auto;
+    cursor: pointer;
+    transition: all ease-in-out 150ms;
+}
+
+.input-file-wrapper:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.input-file, .input-video {
+    display: none;
+}
+
+.select-seasons {
+    border: 0.1rem solid rgba(0, 0, 0, 0.1);
+    position: relative;
+    border-radius: 1rem;
+    width: 18rem;
+    height: 2.5rem;
+    margin: 0 auto;
+}
+
+.select-caption {
+    border-radius: 1rem;
+    font-size: 1.4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all ease-in-out 150ms;
+    width: 100%;
+    height: 100%;
+}
+
+.select-caption:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.select-items {
+    transition: all ease-in-out 150ms;
+    position: absolute;
+    width: 100%;
+    top: 100%;
+    margin: 1rem auto 0;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    background-color: #fff;
+    z-index: 20;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+}
+
+.select-item {
+    text-align: center;
+    cursor: pointer;
+    transition: all ease-in-out 150ms;
+    border-radius: 0.7rem;
+    padding: 0.3rem 0.5rem;
+    font-size: 1.4rem;
+}
+
+.select-item:hover {
+    background-color: #1EB35B;
+    color: #fff;
+}
+
+.button {
+    margin: 0 auto;
+}
+
+.course-detail-wrapper {
+    /*box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);*/
+    /*border-radius: 1rem;*/
+    /*padding: 1rem;*/
+    /*margin: 2rem auto;*/
+}
+
+.season {
+
+    transition: max-height 150ms ease-in-out;
+    margin: 0 auto 2rem;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+    border-radius: 0.7rem;
+    overflow: hidden;
+    position: relative;
+    max-height: 4rem; /* مقدار اولیه */
+}
+
+.season:last-child {
+    margin-bottom: 0;
+}
+
+.seasons-title-wrapper {
+    padding: 0 0.5rem;
+}
+
+.season-title-wrapper {
+    padding: 0 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    cursor: pointer;
+}
+
+.season-header-left {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.right-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.seasons-number {
+    direction: ltr;
+    font-weight: 600;
+    width: 3rem;
+    height: 3rem;
+    background-color: rgba(0, 0, 0, 0.1);
+    text-align: center;
+    border-radius: 0.7rem;
+    font-size: 1.2rem;
+}
+
+.season-title {
+
+}
+
+.arrow-icon {
+
+}
+
+.episodes {
+    font-size: 1.4rem;
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.episode {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.5rem 1rem;
+}
+
+.white {
+    background-color: #fff;
+    color: #000;
+}
+
+.arrow-icon {
+    transition: all ease-in-out 150ms;
+}

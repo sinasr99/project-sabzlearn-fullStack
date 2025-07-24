@@ -1,0 +1,135 @@
+.page {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #F3F4F6;
+}
+
+.box {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    width: 30rem;
+    height: fit-content;
+    padding: 1rem;
+    border-radius: 1rem;
+    background-color: #fff;
+    text-align: center;
+    overflow-y: auto;
+    max-height: 40rem;
+}
+.box::-webkit-scrollbar {
+    width: 4px;           /* عرض اسکرول بار */
+}
+
+.box::-webkit-scrollbar-track {
+    background: transparent; /* رنگ پس‌زمینه اسکرول بار (مسیر) */
+}
+
+.box::-webkit-scrollbar-thumb {
+    background-color: #0A97D4;  /* رنگ دکمه اسکرول بار */
+    border-radius: 10px;     /* گرد بودن گوشه‌ها */
+    border: none;
+}
+
+.title {
+    font-weight: 700;
+    font-size: 1.8rem;
+    color: #1EB35B;
+    margin: 0 auto 1.5rem;
+}
+
+.caption {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.login-link {
+    color: #1EB35B;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin: 2rem auto;
+}
+
+.input-wrapper {
+    width: 100%;
+    height: 4rem;
+    position: relative;
+    background-color: #E1E2E4;
+    border-radius: 1rem;
+    overflow: hidden;
+    font-size: 1.4rem;
+}
+
+.input {
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    padding: 0.5rem 1rem 0.5rem 3rem;
+    border-radius: 1rem;
+}
+
+.input:focus {
+    border: 0.1rem solid rgba(0, 0, 0, 0.2);
+}
+
+.input-icon {
+    position: absolute;
+    top: 0;
+    left: 0.8rem;
+    bottom: 0;
+    margin: auto 0;
+}
+
+.register {
+    width: 7.5rem;
+    height: 3rem;
+    border-radius: 0.7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1EB35B;
+    cursor: pointer;
+    transition: all ease-in-out 150ms;
+    margin: 0 auto;
+    font-size: 1.4rem;
+    color: #fff;
+}
+
+.register:hover {
+    background-color: #087134;
+}
+
+.link-email-login {
+    display: block;
+    background-color: transparent;
+    margin: 1rem 0 0;
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 1.4rem;
+    cursor: pointer;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+}
+
+.err {
+    color: #c32525;
+    font-size: 1.2rem;
+}

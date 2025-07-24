@@ -1,0 +1,36 @@
+.service {
+    max-width: 35rem;
+    padding: 1rem 3rem 1rem 1rem;
+    border-radius: 1.5rem;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.right {
+position: relative;
+}
+
+.background-color {
+    border-radius: 100%;
+    width: 4rem;
+    height: 200%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: -2.2rem;
+    margin: auto 0;
+}
+
+.title {
+    font-weight: 800;
+    font-size: 1.8rem;
+}
+
+.caption {
+    max-width: 50rem;
+    color: rgba(0, 0, 0, 0.6);
+    font-weight: 500;
+}

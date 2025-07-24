@@ -1,0 +1,67 @@
+.teacher-box {
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3);
+    border-radius: 1rem;
+    padding: 1rem;
+    max-width: 25rem;
+}
+
+.image {
+    border-radius: 100%;
+    object-fit: cover;
+    width: 10rem;
+    height: 10rem;
+    margin: 1rem auto;
+    display: block;
+}
+
+.name {
+    font-weight: 700;
+    text-align: center;
+}
+
+.caption {
+    font-size: 1.4rem;
+    color: rgba(0, 0, 0, 0.7);
+    text-align: center;
+    margin: 1rem auto;
+}
+
+.links-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+.skill {
+    width: 90%;
+    border-radius: 1rem;
+    padding: 1rem;
+    background-color: #F3F4F6;
+    color: rgba(0, 0, 0, 0.6);
+    text-align: left;
+    margin: 1rem auto;
+    font-size: 1.5rem;
+}
+
+.social-link {
+    fill: #1EB35B;
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+.social-link-wrapper {
+    width: 4.5rem;
+    height: 4.5rem;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all ease-in-out 150ms;
+    cursor: pointer;
+    border: 0.1rem solid #1EB35B;
+}
+
+.social-link-wrapper:hover {
+    background-color: rgba(30, 179, 91, 0.25);
+}

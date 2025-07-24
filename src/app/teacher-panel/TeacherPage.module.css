@@ -1,0 +1,103 @@
+.parent {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    max-width: 120rem;
+    margin: 2rem auto;
+}
+
+.menu-wrapper {
+
+}
+
+.body {
+max-width: 70rem;
+}
+
+.wrapper {
+
+}
+
+.new-courses {
+    width: 100rem;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+.new-course-title {
+    margin: 1rem auto 2rem;
+    font-weight: 600;
+}
+
+.course-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.course {
+    font-size: 1.4rem;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+    border-radius: 1rem;
+    padding: 1rem;
+}
+
+.course-img {
+    width: calc(100% + 2rem); /* فرض بر padding والد 1rem از هر طرف */
+    margin-left: -1rem;
+    margin-right: -1rem;
+    height: 15rem;
+    object-fit: cover;
+    border-radius: 1rem;
+    display: block;
+}
+
+
+.course-link {
+    margin: 1rem auto 1rem;
+    transition: all ease-in-out 150ms;
+    display: block;
+}
+
+.date {
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 1.2rem;
+    margin: 1.2rem auto 2rem;
+    padding: 0 0 1rem;
+    border-bottom: 0.1rem solid rgba(0, 0, 0, 0.1);
+}
+
+.course-link:hover {
+    color: #1EB35B;
+}
+
+.complete-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+
+.complete-title {
+    font-size: 1.1rem;
+}
+
+.complete-container {
+    position: relative;
+    width: 8rem;
+    height: 0.5rem;
+    border-radius: 0.7rem;
+    background-color: rgba(30, 179, 91, 0.1);
+    overflow: hidden;
+}
+
+.complete-slider {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #1EB35B;
+    border-radius: 1rem;
+}

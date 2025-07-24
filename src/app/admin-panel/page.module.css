@@ -1,0 +1,16 @@
+.parent {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    max-width: 150rem;
+    margin: 2rem auto;
+    flex-wrap: wrap;
+}
+
+.menu-wrapper {
+
+}
+
+.body {
+
+}

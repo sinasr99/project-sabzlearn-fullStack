@@ -1,0 +1,111 @@
+.input-profile {
+    display: none;
+}
+
+.user-menu {
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
+    border-radius: 1rem;
+    padding: 1rem;
+    position: sticky;
+    top: 2rem;
+    left: 0;
+}
+
+.menu-header {
+display: flex;
+align-items: center;
+gap: 4rem;
+justify-content: space-between;
+padding: 0 0 0.5rem;
+margin: 0 auto 2rem;
+border-bottom: 0.1rem solid rgba(0, 0, 0, 0.1);
+}
+
+.menu-header-right {
+display: flex;
+gap: 0.5rem;
+}
+
+.account-img {
+width: 5rem;
+height: 5rem;
+object-fit: cover;
+border-radius: 100%;
+    cursor: pointer;
+}
+
+.account-name-wrapper {
+font-size: 1.2rem;
+}
+
+.name {
+font-weight: 600;
+margin: 0 auto 0.5rem;
+}
+
+.phone {
+color: rgba(0, 0, 0, 0.7);
+}
+
+.menu-header-left {
+display: flex;
+align-items: center;
+gap: 0.5rem;
+}
+
+.menu-left-icon {
+width: 1.5rem;
+height: 1.5rem;
+cursor: pointer;
+transition: all ease-in-out 150ms;
+}
+
+.menu-left-icon:hover {
+scale: 1.1;
+}
+
+.menu-body-title {
+font-weight: 600;
+font-size: 1.1rem;
+color: rgba(0, 0, 0, 0.5);
+margin: 0 auto 2rem;
+}
+
+.menu-body {
+display: flex;
+flex-direction: column;
+justify-content: center;
+gap: 2rem;
+padding: 0 1rem;
+font-size: 1.4rem;
+}
+
+.menu-body-item {
+display: flex;
+align-items: center;
+gap: 0.5rem;
+position: relative;
+cursor: pointer;
+transition: all ease-in-out 150ms;
+}
+
+.menu-body-item:hover {
+color: #1EB35B;
+}
+
+.menu-body-item.active {
+color: #1EB35B;
+fill: #1EB35B;
+}
+
+.menu-body-item.active:before {
+content: "";
+background-color: #1eb35b;
+width: 0.2rem;
+height: 80%;
+margin: auto 0;
+position: absolute;
+top: 0;
+bottom: 0;
+right: -1rem;
+}

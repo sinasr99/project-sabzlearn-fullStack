@@ -1,0 +1,46 @@
+.modal-container {
+    background-color: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(4px);
+    position: fixed;
+    z-index: 500;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+.header {
+
+}
+
+.profile {
+
+}
+
+.header-left {
+
+}
+
+.name {
+
+}
+
+.inventory {
+
+}
+
+.body {
+
+}
+
+.body-item {
+
+}
+
+.icon {
+
+}
+
+.bottom {
+
+}

@@ -1,0 +1,398 @@
+.navbar {
+    position: relative;
+    z-index: 50;
+}
+
+.nav-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.right {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    position: relative;
+}
+
+.logo {
+    width: 6rem;
+    height: 6rem;
+}
+
+.nav-link {
+
+}
+
+.left {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.icon {
+    cursor: pointer;
+    width: 2rem;
+    height: 2rem;
+}
+
+/*
+=-=-=-=-=-=-=-=-=-=-==- Account Modal =-=-=-=-=-=-=-=-=-=-==-
+*/
+.dropdown-wrapper {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.has-item {
+    position: absolute;
+    top: -0.3rem;
+    right: -0.3rem;
+    width: 0.5rem;
+    height: 0.5rem;
+    background-color: #1EB35B;
+    border-radius: 100%;
+}
+
+.back-filter {
+    backdrop-filter: blur(8px);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 100;
+}
+
+.drop-items {
+    z-index: 500;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    margin: 1rem auto 0;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3);
+    border-radius: 1rem;
+    padding: 1rem;
+    width: 25rem;
+    background-color: white;
+    color: rgba(0, 0, 0, 0.8);
+    font-weight: 400;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 1rem 0;
+    margin: 0 0 2rem;
+    border-bottom: 0.1rem solid rgba(0, 0, 0, 0.2);
+}
+
+.profile {
+    width: 5rem;
+    height: 5rem;
+    object-fit: cover;
+    border-radius: 100%;
+}
+
+.header-left {
+    text-align: center;
+}
+
+.name {
+    font-weight: 700;
+}
+
+.inventory {
+    font-size: 1.2rem;
+}
+
+.body {
+    padding: 0 0 1rem;
+    margin: 1.5rem 0;
+    border-bottom: 0.1rem solid rgba(0, 0, 0, 0.2);
+}
+
+.body-item {
+    margin: 1rem 0 0;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    color: rgba(0, 0, 0, 0.8);
+    cursor: pointer;
+    transition: all ease-in-out 150ms;
+    padding: 0.5rem 1rem;
+}
+
+
+.body-item:hover {
+    border-radius: 1rem;
+    color: white;
+    background-color: #1EB35B;
+}
+
+.account-icon {
+    width: 2rem;
+    height: 2rem;
+    fill: rgba(0, 0, 0, 0.8);
+    transition: all ease-in-out 150ms;
+}
+
+.body-item:hover .account-icon {
+    fill: white;
+}
+
+.last-body:hover {
+    background-color: #c32525;
+}
+
+/*
+=-=-=-=-=-==--==--==-=--= Basket =-=-=-=-=-==--==--==-=--=
+*/
+.basket-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #F0F9FF;
+}
+
+.basket-title {
+    color: #0A97D4;
+    font-weight: 700;
+}
+
+.basket-value {
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.basket-body {
+    max-height: 20rem;
+    overflow: auto;
+}
+
+.basket-body {
+    max-height: 20rem;
+    overflow: auto;
+}
+
+/* اسکرول بار برای Webkit مرورگرها */
+.basket-body::-webkit-scrollbar {
+    width: 3px;
+}
+
+.basket-body::-webkit-scrollbar-thumb {
+    background-color: #0A97D4; /* آبی */
+    border-radius: 1px;
+}
+
+.basket-body::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+
+.price-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.price-title {
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.price-value {
+    font-weight: 700;
+}
+
+.buy-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.7rem;
+    cursor: pointer;
+    transition: all ease-in-out 150ms;
+    background-color: #1EB35B;
+    color: #fff;
+    height: 3rem;
+    margin: 1rem auto 0;
+}
+
+.buy-link:hover {
+    background-color: #087134;
+}
+
+/*
+=-=-=-==--==-=-=--=-=-=-=- Hover Menu =-=-=-==--==-=-=--=-=-=-=-
+*/
+.hover-menu-wrapper {
+    position: relative;
+}
+
+.hover-menu-items {
+    position: absolute;
+    width: 15rem;
+    top: 100%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    border-top-right-radius: 0.6rem;
+    border-bottom-right-radius: 0.6rem;
+    overflow: hidden;
+}
+
+.category-item {
+    position: relative;
+    background-color: #ffffff;
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 1.4rem;
+}
+
+.category-content {
+    display: flex;
+    padding: 0.5rem;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.5rem;
+    transition: all ease-in-out 150ms;
+    cursor: pointer;
+}
+
+.category-content:hover {
+    color: #0A97D4;
+    background-color: rgba(10, 151, 212, 0.2);
+}
+
+.category-icon {
+
+}
+
+.hover-menu-back {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+/*
+============================= Search Component =============================
+*/
+.search-wrapper {
+    width: 30rem;
+    height: 3.5rem;
+    border-radius: 2rem;
+    position: relative;
+    background-color: #F3F4F6;
+    overflow: hidden;
+}
+
+.search-input {
+    padding: 0.5rem 1rem 0.5rem 3rem;
+    font-size: 1.4rem;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+}
+
+.search-icon {
+    fill: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    top: 0;
+    left: 0.5rem;
+    bottom: 0;
+    margin: auto 0;
+    width: 2rem;
+    height: 2rem;
+}
+
+.button-menu {
+    width: 2rem;
+    height: 2rem;
+    cursor: pointer;
+    transition: all ease-in-out 150ms;
+    display: none;
+}
+
+.button-menu:hover {
+    scale: 1.1;
+}
+
+.center {
+    display: none;
+}
+
+.menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #F3F4F6;
+    z-index: 100;
+    width: 50%;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    color: black;
+    padding: 1rem 0;
+    transition: all ease-in-out 150ms;
+}
+
+.menu-title {
+    font-weight: 600;
+}
+
+.menu-link {
+    transition: all ease-in-out 150ms;
+    cursor: pointer;
+    width: 100%;
+    height: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu-link:hover {
+    background-color: #1EB35B;
+    color: #fff;
+}
+
+.link-auth {
+    color: #1EB35B;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+@media screen and (max-width: 768px) {
+    .button-menu, .center {
+        display: block;
+    }
+
+    .right .logo, .hover-menu-wrapper, .nav-link {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .drop-items {
+        width: 25rem !important;
+        font-size: 1.4rem;
+
+    }
+
+    .drop-account {
+        width: 20rem !important;
+    }
+
+    .price {
+        display: none;
+    }
+}

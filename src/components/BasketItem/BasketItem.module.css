@@ -1,0 +1,61 @@
+.product {
+    margin: 1rem auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 0 0 0 0.5rem;
+}
+
+.image {
+    width: 7rem;
+    height: 7rem;
+    object-fit: contain;
+}
+
+.basket-body-left {
+    font-size: 1.4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.course-title {
+    font-weight: 700;
+    font-size: 1.4rem;
+}
+
+.price-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.price {
+    text-decoration: line-through;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.price-off {
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.icon {
+    transition: all ease-in-out 150ms;
+    cursor: pointer;
+}
+
+.icon:hover {
+    scale: 1.1;
+    fill: #c32525;
+}
+
+.basket-body {
+
+}
+
+@media screen and (max-width: 576px) {
+    .price {
+        display: none;
+    }
+}

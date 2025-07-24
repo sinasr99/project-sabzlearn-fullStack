@@ -1,0 +1,72 @@
+.header-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem auto 3rem;
+    padding: 0 1rem;
+}
+
+.sort-menu {
+    position: relative;
+}
+
+.sort-menu-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 3.5rem;
+    height: 3.5rem;
+    background-color: #F3F4F6;
+    border-radius: 1rem;
+    cursor: pointer;
+    transition: all ease-in-out 150ms;
+}
+
+.sort-menu-header:hover {
+    background-color: #e0e0e0;
+}
+
+.sort-icon {
+    width: 1.4rem;
+    height: 1.4rem;
+}
+
+.sort-menu-items {
+    transition: all ease-in-out 150ms;
+    position: absolute;
+    top: 100%;
+    margin: 1rem auto 0;
+    left: 0;
+    font-size: 1.2rem;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    border-radius: 1rem;
+    background-color: #fff;
+}
+
+.sort-menu-item {
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+    width: 15rem;
+    height: 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.5rem;
+    background-color: rgba(30, 179, 91, 0.1);
+    color: #1EB35B;
+    cursor: pointer;
+    transition: all ease-in-out 150ms;
+}
+
+.sort-menu-item:hover {
+    background-color: rgba(7, 178, 81, 0.3);
+}
+
+.check-icon {
+    width: 1rem;
+    height: 1rem;
+}

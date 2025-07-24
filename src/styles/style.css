@@ -1,0 +1,646 @@
+/*
+=-=-=-=-=-=-=-=-=-=- CSS Reset =-=-=-=-=-=-=-=-=-=-
+*/
+*, *:before, *:after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: none;
+    list-style: none;
+    text-decoration: none;
+    outline: none;
+    font-size: inherit;
+    font-family: inherit;
+    color: inherit;
+}
+
+/*
+=-=-=-=-=-=-=-=-=-=- CSS Fonts =-=-=-=-=-=-=-=-=-=-
+*/
+@font-face {
+    font-family: "Shabnam";
+    src: url("../../public/fonts/Shabnam.woff");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Shabnam-Bold";
+    src: url("../../public/fonts/Shabnam-Bold.woff2");
+    font-display: swap;
+}
+
+html {
+    font-size: 10px;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Shabnam", sans-serif;
+    font-size: 1.6rem;
+    line-height: 1.6;
+    direction: rtl;
+    overflow-x: hidden;
+}
+
+/*
+=============================== Dark Theme Style
+*/
+.dark-button {
+background-color: transparent;
+}
+
+.container {
+    padding: 0 1.5rem;
+    width: 120rem;
+    margin: 0 auto;
+}
+
+.nav-wrapper {
+    margin: 0 auto 4rem;
+    padding: 1rem;
+    background-color: #fff;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, .1);
+}
+
+.flex-col {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.flex-space-align0 {
+    display: flex;
+    justify-content: space-between;
+    gap: 5rem;
+    margin: 2rem auto;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.wrap {
+    flex-wrap: wrap;
+}
+
+.flex-space {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+}
+
+.m-t-10 {
+    margin: 3rem auto 0;
+}
+
+.m-t-20 {
+    margin: 5rem auto 0;
+}
+
+.m-t-5 {
+    margin: 1rem auto 0;
+}
+
+.p-r-25px {
+    padding-right: 2.5rem;
+}
+
+.mySwiper {
+    margin: 2rem auto 5rem;
+    padding: 1.5rem 0 !important;
+    box-shadow: unset;
+    overflow-x: auto;
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0 !important;
+}
+
+.swiper-slide {
+    display: flex !important;
+    align-items: center !important;
+}
+
+/*================================ Editor =========================================*/
+.tiptap u {
+    text-decoration: underline;
+}
+
+.tiptap h1 {
+    display: block;
+    font-size: 2em;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    font-weight: bold;
+}
+
+.tiptap a {
+    cursor: pointer;
+}
+
+.tiptap h2 {
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.75em;
+    margin-block-end: 0.75em;
+    font-weight: bold;
+}
+
+.tiptap h3 {
+    display: block;
+    font-size: 1.17em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    font-weight: bold;
+}
+
+.tiptap h4 {
+    display: block;
+    font-size: 1em;
+    margin-block-start: 1.12em;
+    margin-block-end: 1.12em;
+    font-weight: bold;
+}
+
+.tiptap h5 {
+    display: block;
+    font-size: 0.83em;
+    margin-block-start: 1.5em;
+    margin-block-end: 1.5em;
+    font-weight: bold;
+}
+
+.tiptap h6 {
+    display: block;
+    font-size: 0.67em;
+    margin-block-start: 1.67em;
+    margin-block-end: 1.67em;
+    font-weight: bold;
+}
+
+/*
+============================ Sweet Alert ============================
+*/
+.swal2-popup, .swal2-modal, .swal2-icon-error, .swal2-show {
+    font-size: 1.2rem;
+}
+
+.swal2-actions {
+    flex-direction: row-reverse;
+}
+
+#swal2-textarea {
+    display: flex;
+    resize: vertical;
+    max-height: 30rem;
+    min-height: 15rem;
+}
+
+
+/*
+================== Reset CSS Text Editor =========================
+*/
+.tox-statusbar__text-container, .tox-statusbar {
+    display: none !important;
+}
+
+.tox-toolbar__primary, .tox-editor-header {
+    justify-content: end !important;
+    background-color: #F3F4F6 !important;
+    box-shadow: none !important;
+}
+
+.tox, .tox-edit-area__iframe {
+    background-color: #F3F4F6 !important;
+}
+
+.tox-sidebar-wrap {
+    background-color: #F3F4F6 !important;
+}
+
+.mce-content-body {
+    background-color: #000 !important;
+}
+
+.tox-edit-area:before {
+    display: none !important;
+}
+
+
+/*============================= Navbar Category item =========================*/
+.category-course {
+    display: block;
+    padding: 0.5rem 0.5rem 0.5rem 1rem;
+    margin: 0.5rem auto;
+    color: rgba(0, 0, 0, 0.7);
+    transition: all ease-in-out 150ms;
+    text-wrap: nowrap;
+}
+
+.category-course:hover {
+    color: #0A97D4;
+}
+
+
+.category-courses {
+    font-size: 1.4rem;
+    width: fit-content;
+    position: absolute;
+    top: 100%;
+    right: 15rem;
+    background-color: white;
+    border-top-left-radius: 0.6rem;
+    border-bottom-left-radius: 0.6rem;
+    color: rgba(0, 0, 0, 0.6);
+    overflow-y: auto;
+    scrollbar-width: thin; /* فایرفاکس */
+    scrollbar-color: #0A97D4 rgba(0, 0, 0, 0.1);
+
+}
+
+.category-courses::-webkit-scrollbar-button {
+    display: none;
+}
+
+.m-b-2 {
+    margin-bottom: 2rem;
+}
+
+.m-b-5 {
+    margin-bottom: 5rem;
+}
+
+.flex-all-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*
+========================= Chart
+*/
+.recharts-responsive-container {
+    font-size: 1.2rem;
+    width: 70rem !important;
+    height: 55rem !important;
+}
+
+.recharts-wrapper {
+
+}
+
+.my-chart-wrapper {
+    /*width: 65rem;*/
+    /*overflow-x: auto;*/
+}
+
+/*
+=========================== Grid System ===========================
+*/
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.col-1 {
+    width: 8.3333%;
+    padding: 0.5rem;
+}
+
+.col-2 {
+    width: 16.6666%;
+    padding: 0.5rem;
+}
+
+.col-3 {
+    width: 25%;
+    padding: 0.5rem;
+}
+
+.col-4 {
+    width: 33.3333%;
+    padding: 0.5rem;
+}
+
+.col-5 {
+    width: 41.6666%;
+    padding: 0.5rem;
+}
+
+.col-6 {
+    width: 50%;
+    padding: 0.5rem;
+}
+
+.col-7 {
+    width: 58.3333%;
+    padding: 0.5rem;
+}
+
+.col-8 {
+    width: 66.6666%;
+    padding: 0.5rem;
+}
+
+.col-9 {
+    width: 75%;
+    padding: 0.5rem;
+}
+
+.col-10 {
+    width: 83.3333%;
+    padding: 0.5rem;
+}
+
+.col-11 {
+    width: 91.6666%;
+    padding: 0.5rem;
+}
+
+.col-12 {
+    width: 100%;
+    padding: 0.5rem;
+}
+
+@media screen and (max-width: 992px) {
+    .flex-space-align0 {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (min-width: 0) {
+    .container {
+        width: 100%;
+    }
+
+    .col-zero-1 {
+        width: 8.3333%;
+    }
+
+    .col-zero-2 {
+        width: 16.6666%;
+    }
+
+    .col-zero-3 {
+        width: 25%;
+    }
+
+    .col-zero-4 {
+        width: 33.3333%;
+    }
+
+    .col-zero-5 {
+        width: 41.6666%;
+    }
+
+    .col-zero-6 {
+        width: 50%;
+    }
+
+    .col-zero-7 {
+        width: 58.3333%;
+    }
+
+    .col-zero-8 {
+        width: 66.6666%;
+    }
+
+    .col-zero-9 {
+        width: 75%;
+    }
+
+    .col-zero-10 {
+        width: 83.3333%;
+    }
+
+    .col-zero-11 {
+        width: 91.6666%;
+    }
+
+    .col-zero-12 {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 576px) {
+    .col-sm-1 {
+        width: 8.3333%;
+    }
+
+    .col-sm-2 {
+        width: 16.6666%;
+    }
+
+    .col-sm-3 {
+        width: 25%;
+    }
+
+    .col-sm-4 {
+        width: 33.3333%;
+    }
+
+    .col-sm-5 {
+        width: 41.6666%;
+    }
+
+    .col-sm-6 {
+        width: 50%;
+    }
+
+    .col-sm-7 {
+        width: 58.3333%;
+    }
+
+    .col-sm-8 {
+        width: 66.6666%;
+    }
+
+    .col-sm-9 {
+        width: 75%;
+    }
+
+    .col-sm-10 {
+        width: 83.3333%;
+    }
+
+    .col-sm-11 {
+        width: 91.6666%;
+    }
+
+    .col-sm-12 {
+        width: 100%;
+    }
+}
+
+/* MD - >= 768px */
+@media screen and (min-width: 768px) {
+    .container {
+        width: 73rem;
+    }
+
+    .col-md-1 {
+        width: 8.3333%;
+    }
+
+    .col-md-2 {
+        width: 16.6666%;
+    }
+
+    .col-md-3 {
+        width: 25%;
+    }
+
+    .col-md-4 {
+        width: 33.3333%;
+    }
+
+    .col-md-5 {
+        width: 41.6666%;
+    }
+
+    .col-md-6 {
+        width: 50%;
+    }
+
+    .col-md-7 {
+        width: 58.3333%;
+    }
+
+    .col-md-8 {
+        width: 66.6666%;
+    }
+
+    .col-md-9 {
+        width: 75%;
+    }
+
+    .col-md-10 {
+        width: 83.3333%;
+    }
+
+    .col-md-11 {
+        width: 91.6666%;
+    }
+
+    .col-md-12 {
+        width: 100%;
+    }
+}
+
+/* LG - >= 992px */
+@media screen and (min-width: 992px) {
+    .container {
+        width: 96rem;
+    }
+
+    .col-lg-1 {
+        width: 8.3333%;
+    }
+
+    .col-lg-2 {
+        width: 16.6666%;
+    }
+
+    .col-lg-3 {
+        width: 25%;
+    }
+
+    .col-lg-4 {
+        width: 33.3333%;
+    }
+
+    .col-lg-5 {
+        width: 41.6666%;
+    }
+
+    .col-lg-6 {
+        width: 50%;
+    }
+
+    .col-lg-7 {
+        width: 58.3333%;
+    }
+
+    .col-lg-8 {
+        width: 66.6666%;
+    }
+
+    .col-lg-9 {
+        width: 75%;
+    }
+
+    .col-lg-10 {
+        width: 83.3333%;
+    }
+
+    .col-lg-11 {
+        width: 91.6666%;
+    }
+
+    .col-lg-12 {
+        width: 100%;
+    }
+}
+
+/* XL - >= 1200px */
+@media screen and (min-width: 1200px) {
+    .container {
+        width: 117rem;
+    }
+
+    .col-xl-1 {
+        width: 8.3333%;
+    }
+
+    .col-xl-2 {
+        width: 16.6666%;
+    }
+
+    .col-xl-3 {
+        width: 25%;
+    }
+
+    .col-xl-4 {
+        width: 33.3333%;
+    }
+
+    .col-xl-5 {
+        width: 41.6666%;
+    }
+
+    .col-xl-6 {
+        width: 50%;
+    }
+
+    .col-xl-7 {
+        width: 58.3333%;
+    }
+
+    .col-xl-8 {
+        width: 66.6666%;
+    }
+
+    .col-xl-9 {
+        width: 75%;
+    }
+
+    .col-xl-10 {
+        width: 83.3333%;
+    }
+
+    .col-xl-11 {
+        width: 91.6666%;
+    }
+
+    .col-xl-12 {
+        width: 100%;
+    }
+}

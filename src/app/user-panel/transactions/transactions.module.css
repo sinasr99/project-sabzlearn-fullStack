@@ -1,0 +1,37 @@
+.wallet-wrapper {
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+    border-radius: 1rem;
+    padding: 1rem;
+    max-width: 40rem;
+    margin: 2rem auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    font-size: 1.45rem;
+}
+
+.wallet-icon-wrapper {
+    width: 5rem;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(30, 179, 91, 1);
+    color: #fff;
+    border-radius: 1rem;
+}
+
+.wallet-icon {
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+.wallet-title {
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.wallet-value {
+font-weight: 600;
+    font-size: 1.2rem;
+}

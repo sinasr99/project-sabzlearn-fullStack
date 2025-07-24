@@ -1,0 +1,107 @@
+.wrapper {
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+    border-radius: 1rem;
+    padding: 1.5rem;
+    margin: 2rem auto;
+    font-size: 1.4rem;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title {
+    font-weight: 700;
+    font-size: 1.8rem;
+}
+
+.filter-chart-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    font-size: 1rem !important;
+}
+
+.filter-chart-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.6rem;
+    width: 3.5rem;
+    height: 3.5rem;
+    background-color: #F3F4F6;
+    cursor: pointer;
+    transition: all ease-in-out 150ms;
+}
+
+.filter-chart-header:hover {
+    background-color: #dedede;
+}
+
+.sort-icon {
+    width: 1.7rem;
+    height: 1.7rem;
+}
+
+.filter-chart-items {
+    transition: all ease-in-out 150ms;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    max-width: 30rem;
+    margin: 1.5rem auto 0;
+    background-color: #fff;
+    border-radius: 1rem;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    width: 14rem;
+    padding: 1rem;
+}
+
+.filter-chart-item {
+display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    height: 3rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: all ease-in-out 150ms;
+    border-radius: 1rem;
+}
+
+.filter-chart-item.item-active {
+    background-color: rgba(30, 179, 91, 0.2);
+    color: #1EB35B;
+}
+
+.filter-chart-item:hover {
+    background-color: rgba(30, 179, 91, 0.2);
+    color: #1EB35B;
+}
+
+.chart-wrapper {
+    height: fit-content;
+    overflow-x: auto;
+    margin: 2rem auto 0;
+
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE and Edge */
+}
+
+.chart-wrapper::-webkit-scrollbar {
+    display: none; /* Chrome, Safari */
+}
+
+
+@media screen and (max-width: 730px) {
+    .wrapper {
+        display: none;
+    }
+}

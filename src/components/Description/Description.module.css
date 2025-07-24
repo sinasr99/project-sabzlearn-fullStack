@@ -1,0 +1,48 @@
+.caption-wrapper {
+    overflow: hidden;
+    height: 25rem;
+    padding: 1rem;
+    position: relative;
+}
+
+.effect {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    height: 8rem;
+    opacity: 0.9;
+    background-color: #fff;
+}
+
+.description-title {
+    font-weight: 700;
+    font-size: 1.7rem;
+}
+
+.description-title:nth-child(1) {
+    font-weight: 900 !important;
+    font-size: 2rem !important;
+}
+
+.description-caption {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.6);
+    margin: 0 auto 3rem;
+}
+
+.button {
+    background-color: #1EB35B;
+    color: #fff;
+    border-radius: 0.7rem;
+    padding: 0.5rem 1rem;
+    display: block;
+    margin: 1rem auto;
+    transition: all ease-in-out 150ms;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #087134;
+}

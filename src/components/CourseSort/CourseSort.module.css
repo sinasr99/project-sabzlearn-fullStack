@@ -1,0 +1,40 @@
+.filter-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    width: 100%;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+    border-radius: 1rem;
+    padding: 0 2rem;
+}
+
+.filter-caption {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.filter-icon {
+
+}
+
+.filter-items {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.filter-item {
+    cursor: pointer;
+    transition: all ease-in-out 150ms;
+    padding: 1rem 0;
+}
+
+.filter-item:hover {
+   color: #1EB35B;
+}
+
+.filter-item--active {
+    border-top: 0.2rem solid #1EB35B;
+    border-bottom: 0.2rem solid #1EB35B;
+}

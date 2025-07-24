@@ -1,0 +1,55 @@
+.sort-wrapper {
+    width: fit-content;
+    position: relative;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+    font-size: 1.4rem;
+    border-radius: 1rem;
+}
+
+.current-sort {
+    width: 13rem;
+    height: 3rem;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all ease-in-out 150ms;
+    cursor: pointer;
+    padding: 0.5rem;
+}
+
+.icon {
+    transition: all ease-in-out 150ms;
+}
+
+.sort-items {
+    width: 100%;
+    position: absolute;
+    top: 100%;
+    margin: 0.5rem auto 0;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    background-color: #fff;
+    border-radius: 0.7rem;
+    transition: all 150ms ease-in-out;
+}
+
+.sort-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.7rem;
+    cursor: pointer;
+    width: 100%;
+    height: 3rem;
+    transition: all ease-in-out 150ms;
+    padding: 0.5rem;
+}
+
+.sort-item:hover {
+    background-color: #1EB35B;
+    color: #fff;
+    transition: all ease-in-out 150ms;
+}

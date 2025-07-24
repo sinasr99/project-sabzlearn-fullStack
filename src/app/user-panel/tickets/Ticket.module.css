@@ -1,0 +1,230 @@
+.parent {
+    background-color: #fff;
+    border-radius: 1rem;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    max-width: 80rem;
+}
+
+.header-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem auto 3rem;
+}
+
+.sort-menu {
+    position: relative;
+}
+
+.sort-menu-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 3.5rem;
+    height: 3.5rem;
+    color: black;
+    background-color: #F3F4F6;
+    border-radius: 1rem;
+    cursor: pointer;
+    transition: all ease-in-out 150ms;
+}
+
+.sort-menu-header:hover {
+    background-color: #e0e0e0;
+}
+
+.sort-icon {
+    width: 1.4rem;
+    height: 1.4rem;
+}
+
+.sort-menu-items {
+    transition: all ease-in-out 151ms;
+    position: absolute;
+    top: 100%;
+    margin: 1rem auto 0;
+    left: 0;
+    font-size: 1.2rem;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+    padding: 1.1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    border-radius: 1rem;
+    background-color: #fffffa;
+}
+
+.sort-menu-item {
+    padding: 0.55rem 1rem;
+    border-radius: 1.1rem;
+    width: 15.1rem;
+    height: 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.5rem;
+    background-color: rgba(30, 179, 91, 0.1);
+    color: #1EB35B;
+    cursor: pointer;
+    transition: all ease-in-out 150ms;
+}
+
+.sort-menu-item:hover {
+    background-color: rgba(7, 178, 81, 0.3);
+}
+
+.check-icon {
+    width: 1rem;
+    height: 1rem;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.create-ticket {
+    background-color: #1EB35B;
+    color: #fff;
+    width: 12rem;
+    height: 3rem;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.75rem;
+    font-size: 1.2rem;
+}
+
+.create-ticket:hover {
+    background-color: rgba(30, 179, 91, 0.8);
+}
+
+.plus-icon {
+    width: 1.2rem;
+    height: 1.2rem;
+}
+
+.tickets-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.ticket-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 70rem;
+    height: 8rem;
+    border-radius: 1rem;
+    padding: 1rem;
+    border: 0.1rem solid rgba(0, 0, 0, 0.1);
+    font-size: 1.4rem;
+    transition: all ease-in-out 150ms;
+}
+
+.ticket-item:hover {
+    transform: translateX(-1rem);
+}
+
+.ticket-item-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.ticket-title {
+    color: rgba(0, 0, 0, 0.6);
+    position: relative;
+    font-weight: 600;
+    padding: 0 1.5rem 0 0;
+    transition: all ease-in-out 150ms;
+}
+
+.ticket-title:hover {
+    color: #1EB35B;
+}
+
+.ticket-title:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    border-radius: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 0.5rem;
+    height: 0.5rem;
+    margin: auto 0;
+}
+
+.see-ticket-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    border: 0.1rem solid rgba(0, 0, 0, 0.6);
+    color: rgba(0, 0, 0, 0.6);
+    padding: 0.5rem;
+    width: 11rem;
+    height: 3rem;
+    border-radius: 0.8rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: all ease-in-out 150ms;
+}
+
+.see-ticket-wrapper:hover {
+    background-color: #cacaca;
+}
+
+.arrow-icon {
+    width: 1rem;
+    height: 1rem;
+}
+
+.ticket-body {
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.ticket-body-item {
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+}
+
+.ticket-body-icon {
+
+}
+
+@media screen and (max-width: 576px) {
+    .ticket-body-item:nth-child(3) {
+        display: none;
+    }
+
+    .ticket-item:hover {
+        transform: translateX(0);
+    }
+
+    .header-title {
+        font-size: 1.4rem;
+    }
+
+    .create-ticket {
+        width: 10rem;
+        font-size: 1rem;
+        gap: 0.5rem;
+    }
+
+    .plus-icon {
+        width: 0.7rem;
+        height: 0.7rem;
+    }
+}

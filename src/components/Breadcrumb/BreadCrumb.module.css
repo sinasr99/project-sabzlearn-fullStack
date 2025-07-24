@@ -1,0 +1,63 @@
+.bread-crumb {
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, .1);
+    border-radius: 1rem;
+    overflow: auto;
+    scrollbar-width: none; /* برای فایرفاکس */
+}
+
+.bread-crumb::-webkit-scrollbar {
+    display: none; /* برای کروم، سافاری و غیره */
+}
+
+
+.bread-item {
+    min-width: fit-content;
+    height: 2.5rem;
+    padding: 0 1rem 0 3rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.bread-item .before {
+    background-color: #f1f1f1;
+    width: 3.3rem;
+    height: .5rem;
+    position: absolute;
+    top: 0;
+    right: -30px;
+    rotate: -45deg;
+}
+
+.bread-item .after {
+    background-color: #f1f1f1;
+    width: 3.3rem;
+    height: .5rem;
+    position: absolute;
+    bottom: 0;
+    right: -30px;
+    rotate: -135deg;
+}
+
+.bread-item:first-child .before {
+    display: none;
+}
+
+.bread-item:first-child .after {
+    display: none;
+}
+
+.bread-item:last-child {
+    width: 100%;
+}
+
+.icon {
+    width: 2rem;
+    height: 2rem;
+}

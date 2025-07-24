@@ -1,0 +1,248 @@
+.article-content img {
+    width: 95%;
+    object-fit: cover;
+    margin: 1rem auto;
+    border-radius: 1rem;
+}
+
+.article-wrapper {
+    margin: 2rem auto;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
+    border-radius: 1rem;
+    padding: 1rem;
+}
+
+.article-title {
+    font-weight: 700;
+    font-size: 2.3rem;
+    position: relative;
+    margin: 1rem auto 4rem;
+    padding: 0 0 1rem;
+    border-bottom: 0.1rem solid rgba(0, 0, 0, 0.1);
+}
+
+.article-title:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: -1.5rem;
+    bottom: 0;
+    margin: auto 0;
+    background-color: #0A97D4;
+    width: 0.6rem;
+    height: 3rem;
+}
+
+.article-info-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    color: rgba(0, 0, 0, 0.7);
+    margin: 0 auto 3rem;
+}
+
+.article-info-item {
+    display: flex;
+    align-items: center;
+    gap: 0.2rem;
+}
+
+.article-info-icon {
+    width: 2rem;
+    height: 2rem;
+}
+
+.video-wrapper {
+    margin: 3rem auto 4rem;
+}
+
+.md-caption {
+    color: rgba(0, 0, 0, 0.7);
+    margin: 0.5rem auto 2rem;
+    text-align: justify;
+}
+
+.md-caption:last-child {
+    margin: 0 auto;
+}
+
+.article-image {
+    margin: 2rem auto;
+    object-fit: cover;
+    display: block;
+    width: 100%;
+    border-radius: 1rem;
+}
+
+.green {
+    color: #087134;
+}
+
+.md-title {
+    font-weight: 600;
+    font-size: 1.8rem;
+    margin: 2rem auto 0.2rem;
+}
+
+.link-course {
+    color: #0A97D4;
+    font-weight: 600;
+    transition: all ease-in-out 150ms;
+    display: block;
+    width: fit-content;
+    cursor: pointer;
+}
+
+.link-course:hover {
+    border-bottom: 0.1rem solid #0A97D4;
+}
+
+.lg-title {
+    font-weight: 700;
+    font-size: 2.1rem;
+}
+
+.video-link {
+    color: #0A97D4;
+}
+
+.blue {
+    color: #106284;
+}
+
+.article-recommend-title {
+    font-weight: 600;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    position: relative;
+    padding: 0 1rem 0 0;
+    margin: 0 auto 2rem;
+    color: #000;
+}
+
+.article-recommend-title:before {
+    content: "";
+    margin: auto 0;
+    top: 0;
+    bottom: 0;
+    position: absolute;
+    right: -0.5rem;
+    width: 0.6rem;
+    height: 3.5rem;
+    background-color: #F59E0B;
+}
+
+.article-recommend-icon {
+    width: 3rem !important;
+    height: 3rem !important;
+    fill: #F59E0B;
+}
+
+.article-recommend {
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
+    border-radius: 1rem;
+    margin: 4rem auto;
+    padding: 1rem 0 2.5rem;
+}
+
+.article-recommend-title {
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.article-recommend-icon {
+    width: 2rem;
+    height: 2rem;
+}
+
+.article-comments {
+
+}
+
+.articles-recommend-wrapper {
+    grid-template-columns: repeat(2, 1fr);
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    gap: 2rem;
+}
+
+.article-recommend-item {
+    background-color: #f1f1f1;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    justify-content: center;
+    max-width: 36rem;
+    height: 10rem;
+}
+
+.article-recommend-image {
+    width: 13rem;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0.7rem;
+}
+
+.article-item-content {
+    font-size: 1.4rem;
+}
+
+.article-item-link {
+    max-width: 20rem;
+    margin: 0 auto 1rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: block;
+    font-weight: 600;
+}
+
+.article-item-date {
+    display: flex;
+    gap: 0.5rem;
+    color: #00000099;
+}
+
+.calender-icon {
+    width: 2rem;
+    height: 2rem;
+}
+
+@media screen and (max-width: 992px) {
+    .article-recommend-item {
+        font-size: 1.2rem;
+    }
+
+    .article-item-link {
+        max-width: 12rem;
+        font-size: 1.2rem;
+    }
+
+    .article-item-date {
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .articles-recommend-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1.5rem;
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .article-item-link {
+        max-width: 9rem;
+    }
+
+    .article-recommend-image {
+        width: 10rem;
+    }
+}

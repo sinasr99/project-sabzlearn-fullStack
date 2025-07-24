@@ -1,0 +1,148 @@
+.seasons-wrapper {
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
+    border-radius: 1rem;
+    padding: 1rem 2rem;
+    margin: 0 auto 2rem;
+}
+
+.header {
+    margin: 1rem auto 2rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-weight: 700;
+    font-size: 2.2rem;
+}
+
+.header-icon {
+    font-size: 4rem;
+    width: 4rem;
+    height: 4rem;
+    fill: #0A97D4;
+}
+
+.seasons-item {
+    margin: 2rem auto 0;
+    background-color: #F3F4F6;
+    border-radius: 1rem;
+    overflow: hidden;
+    transition: all ease-in-out 150ms;
+    max-height: 4.5rem;
+}
+
+.seasons-item.open {
+    max-height: 1000rem;
+    transition: all ease-in-out 150ms;
+}
+
+.seasons-header {
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #64748B;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.seasons-title {
+
+}
+
+.left {
+    direction: ltr;
+    font-size: 1.4rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.circle {
+    width: 0.3rem;
+    height: 0.3rem;
+    fill: rgba(0, 0, 0, 0.7);
+}
+
+.seasons-icon {
+    rotate: 180deg;
+    width: 2rem;
+    height: 2rem;
+    transition: all ease-in-out 150ms;
+}
+
+.seasons-icon.open {
+    rotate: 360deg;
+}
+
+.episode {
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 1rem;
+    color: rgba(0, 0, 0, 0.8);
+    font-weight: 500;
+    border-bottom: 0.1rem solid rgba(0, 0, 0, 0.1);
+}
+
+.episode:last-child {
+    border-bottom: none;
+}
+
+.episode-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.episode-title {
+    font-weight: 500;
+}
+
+.episode-left {
+    direction: ltr;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.episode-duration {
+    width: 6rem;
+    height: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5rem;
+    border: 0.2rem solid #1EB35B;
+    color: #1EB35B;
+    font-size: 1.2rem;
+    line-height: 2.5rem;
+}
+
+.episode-icon {
+    width: 2rem;
+    height: 2rem;
+    transition: all ease-in-out 150ms;
+}
+
+.seen-wrapper {
+    border: 0.1rem solid #1EB35B;
+    color: #fff;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.seen-wrapper.seen {
+    background-color: #1EB35B;
+}
+
+.seen-icon {
+    width: 1.2rem;
+    height: 1.2rem;
+    font-weight: 400;
+}

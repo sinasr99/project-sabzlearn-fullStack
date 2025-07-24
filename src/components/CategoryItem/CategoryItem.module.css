@@ -1,0 +1,22 @@
+.category-item {
+    width: 26rem;
+    height: 16rem;
+    text-align: center;
+    border-radius: 2rem;
+    padding: 1rem;
+    font-weight: 800;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    color: #fff;
+}
+
+.title {
+    margin: 0 0 0.5rem;
+}
+
+.value {
+
+}

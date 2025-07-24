@@ -1,0 +1,75 @@
+.wrapper {
+
+}
+
+.create-wrapper {
+
+}
+
+/*
+====================== Courses ======================
+*/
+.courses-wrapper {
+    margin: 2rem auto;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, .1);
+    border-radius: 1rem;
+    padding: 2rem 0 0;
+}
+
+.course-box {
+    width: 95%;
+    height: 25rem;
+    margin: 0 auto;
+    border-radius: 1rem;
+    overflow: hidden;
+    padding: 1rem;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, .1);
+}
+
+.course-img {
+    width: 100%;
+    height: 12rem;
+    object-fit: cover;
+    border-radius: 1rem;
+}
+
+.course-title {
+    font-size: 1.4rem;
+    font-weight: 600;
+    text-align: center;
+    color: rgba(0, 0, 0, .7);
+    margin: 1rem auto 2rem;
+}
+
+.course-buttons {
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.course-btn {
+    background-color: #1EB35B;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.7rem;
+    width: 10rem;
+    height: 2.5rem;
+    cursor: pointer;
+    transition: all ease-in-out 150ms;
+}
+
+.course-btn:hover {
+    background-color: #087134;
+}
+
+.danger {
+background-color: #c32525 !important;
+}
+
+.danger:hover {
+    background-color: #941111 !important;
+}

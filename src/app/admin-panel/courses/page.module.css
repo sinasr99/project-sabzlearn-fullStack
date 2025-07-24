@@ -1,0 +1,23 @@
+.wrapper {
+    max-width: 80rem;
+}
+
+.courses {
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+.courses-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    margin: 1rem auto 4rem;
+}
+
+.courses-title {
+    font-weight: 700;
+    font-size: 1.8rem;
+    color: #1EB35B;
+}
