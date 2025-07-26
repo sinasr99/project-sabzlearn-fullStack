@@ -10,4 +10,4 @@
 10. npm run build
 11. npm start
 
-12. Finish enjoy the project 😒
+12. Finish enjoy the project
